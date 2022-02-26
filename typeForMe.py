@@ -1,6 +1,7 @@
 import keyboard
 import os
 import time
+
 os.system("title Type For Me!")
 def pause():
     input("Press Enter To Continue...")
@@ -15,9 +16,12 @@ while(True):
     print(2)
     time.sleep(1)
     for char in sen:
-        if(char.isupper()):
-            keyboard.press_and_release("shift + " + char)
+        if(char == "!"):
+            keyboard.press_and_release("shift + 1")
         else:
-            keyboard.press_and_release(char)
-        time.sleep(0.0001)
+            if(char.isupper()):
+                keyboard.press_and_release("shift + " + char)
+            else:
+                keyboard.press_and_release(char)
+            time.sleep(0.00000000000000000000000001)
     pause()
