@@ -2,6 +2,8 @@ import keyboard
 import os
 import time
 
+def type(message):
+    keyboard.press_and_release(message)
 os.system("title Type For Me!")
 def pause():
     input("Press Enter To Continue...")
@@ -16,12 +18,11 @@ while(True):
     print(2)
     time.sleep(1)
     for char in sen:
-        if(char == "!"):
-            keyboard.press_and_release("shift + 1")
+        if(char.isupper()):
+            keyboard.press_and_release("shift + " + char)
+        elif(char == "!" or "@" or "#" or "$" or "%" or "^" or "&" or "*" or "(" or ")" or "{" or "}" or "?" or "<" or ">" or "~" or ":" or "\""):
+            type("shift + " + char)
         else:
-            if(char.isupper()):
-                keyboard.press_and_release("shift + " + char)
-            else:
-                keyboard.press_and_release(char)
-            time.sleep(0.00000000000000000000000001)
+            keyboard.press_and_release(char)
+        time.sleep(0.00001)
     pause()
