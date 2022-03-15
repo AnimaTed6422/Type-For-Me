@@ -3,3 +3,20 @@ An Automatic typing Python Script For Typing Quickly, And showing off to your pe
 
 
 Just Make Sure to run `pip install keyboard` before running!
+
+- [x] Type Super Quickly
+- [x] Use Custom Functions (Just Import it, use the `type({message})` function)
+- [ ] Get Text Automatically
+
+Example of Importing:
+
+```
+import {filename}
+...
+
+{filename}.type("Hi There!")
+```
+
+output:
+
+Typed: `Hi There!`
