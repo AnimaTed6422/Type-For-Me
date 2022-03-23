@@ -11,10 +11,10 @@ Just Make Sure to run `pip install keyboard` before running!
 Example of Importing:
 
 ```
-import {filename}
+import typeForMe
 ...
 
-{filename}.type("Hi There!")
+typeForMe.type("Hi There!")
 ```
 
 output:
