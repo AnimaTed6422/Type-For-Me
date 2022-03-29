@@ -1,6 +1,7 @@
 # Type-For-Me
 An Automatic typing Python Script For Typing Quickly, And showing off to your peers!
 
+It is developed with windows in mind. Please be mindful of that.
 
 Just Make Sure to run `pip install keyboard` before running!
 
