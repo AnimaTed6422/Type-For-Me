@@ -3,7 +3,8 @@ import os
 import time
 
 def type(message):
-    keyboard.press_and_release(message)
+    for char in message:
+        keyboard.press_and_release(message)
 os.system("title Type For Me!")
 def pause():
     input("Press Enter To Continue...")
