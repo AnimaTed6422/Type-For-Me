@@ -11,7 +11,7 @@ Just Make Sure to run `pip install keyboard` before running!
 
 Example of Importing:
 
-```
+```python
 import typeForMe
 ...
 
