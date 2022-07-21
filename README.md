@@ -17,7 +17,3 @@ import typeForMe
 
 typeForMe.type("Hi There!")
 ```
-
-output:
-
-Typed: `Hi There!`
